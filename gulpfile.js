@@ -45,7 +45,7 @@ const arg = (argList => {
 gulp.task('serve', ['sass', 'scripts'], function () {
 	browserSync.init({
 		// Proxy auf Apache Port
-		proxy: 'localhost:8888'
+		proxy: 'localhost:8888/projects/heringsdorf/'
 	});
 	gulp.watch("system/modules/vimo/assets/vendor/gulpsrc/scripts/**/*.js", ['scripts']);
 	gulp.watch("system/modules/vimo/assets/vendor/gulpsrc/styles/**/*.scss", ['sass']);
